@@ -18,6 +18,47 @@
         <h1>This is the science page!</h1>
         <img src="images/orion-nebula.jpg" alt="orion-nebula" style="width:500px;" class="center">
 
+        <h2>Calculator</h2>
+
+        <div class="calculatorContainer">
+            <div class="calculator">
+                <form>
+                    <div class="calculatorDisplay">
+                        <input type="text" name="calculatorDisplay">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="calculatorDisplay.value = '' " class="operator">
+                        <input type="button" value="DE" onclick="calculatorDisplay.value = calculatorDisplay.value.toString().slice(0,-1)" class="operator">
+                        <input type="button" value="." onclick="calculatorDisplay.value += '.' " class="operator">
+                        <input type="button" value="/" onclick="calculatorDisplay.value += '/' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="calculatorDisplay.value += '7' ">
+                        <input type="button" value="8" onclick="calculatorDisplay.value += '8' ">
+                        <input type="button" value="9" onclick="calculatorDisplay.value += '9' ">
+                        <input type="button" value="*" onclick="calculatorDisplay.value += '*' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="calculatorDisplay.value += '4' ">
+                        <input type="button" value="5" onclick="calculatorDisplay.value += '5' ">
+                        <input type="button" value="6" onclick="calculatorDisplay.value += '6' ">
+                        <input type="button" value="-" onclick="calculatorDisplay.value += '-' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="calculatorDisplay.value += '1' ">
+                        <input type="button" value="2" onclick="calculatorDisplay.value += '2' ">
+                        <input type="button" value="3" onclick="calculatorDisplay.value += '3' ">
+                        <input type="button" value="+" onclick="calculatorDisplay.value += '+' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="calculatorDisplay.value += '00' ">
+                        <input type="button" value="0" onclick="calculatorDisplay.value += '0' ">
+                        <input type="button" value="=" onclick="calculatorDisplay.value = eval(calculatorDisplay.value)" class="equal operator">
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </body>
 
 </html>
