@@ -6,5 +6,4 @@ The website is currently set up into 4 sections:
 
 - Home
 - Science
-- Security
 - About
